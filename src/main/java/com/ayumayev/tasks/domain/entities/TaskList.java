@@ -31,6 +31,9 @@ public class TaskList {
     @Column(name = "updated", nullable = false)
     private LocalDateTime updated;
 
+    public TaskList() {
+    }
+
     public TaskList(UUID id, String title, String description, List<Task> tasks, LocalDateTime created, LocalDateTime updated) {
         this.id = id;
         this.title = title;
